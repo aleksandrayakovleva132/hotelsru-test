@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>rc-test</title>
+      <link href="css/style.css" rel="stylesheet">
+      <link href="js/dist/jquery.formstyler.css" rel="stylesheet">
+      <link href="js/dist/jquery.formstyler.theme.css" rel="stylesheet">
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="js/dist/jquery.formstyler.min.js"></script>
+      <script>
+         (function($) {
+         $(function() {
+           $('input, select').styler({
+             selectSearch: true,
+           });
+         });
+         })(jQuery);
+      </script>
+   </head>
+   <body>
+      <div class="site-wrapper">
+         <div class="page-header__container">
+            <header class="page-header">
+               <nav class="main-nav">
+                  <div class="main-nav__toggle">
+                     <a class="visually-hidden">
+                        Открыть меню</span>
+                  </div>
+                  <ul class="main-nav__menu-list main-nav__list--closed">
+                  <li class="main-nav__item">
+                  <a class="main-nav__link">search tickets</a>
+                  </li>
+                  <li class="main-nav__item">
+                  <a class="main-nav__link">sapsan</a>
+                  </li>
+                  <li class="main-nav__item">
+                  <a class="main-nav__link">allegro</a>
+                  </li>
+                  <li class="main-nav__item main-nav__menu">
+                  <a class="main-nav__link">trans-siberian</a>
+                  </li>
+                  <li class="main-nav__item main-nav__menu">
+                  <a class="main-nav__link">faq</a>
+                  </li>
+                  <li class="main-nav__item main-nav__menu main-nav__menu-guide">
+                  <a class="main-nav__link">tickets guide</a>
+                  <ul class="main-nav__item-list">
+                  <li>Group travel</li>
+                  <li>Ticket types</li>
+                  <li>Child policy</li>
+                  <li>Change ticket request</li>
+                  <li>Cancel tickets</li>
+                  </ul>
+                  </li>
+                  <li class="main-nav__item main-nav__menu">
+                  <a class="main-nav__link">contact us</a>
+                  </li>
+                  </ul>
+               </nav>
+               <div class="main-nav__login">
+                  <svg class="main-nav__login-icon" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 18.7 24.5" style="enable-background:new 0 0 18.7 24.5;" xml:space="preserve">
+                     <g>
+                        <ellipse class="st0" cx="9.4" cy="5.6" rx="4.5" ry="5.4"/>
+                        <ellipse class="st0" cx="9.4" cy="18.2" rx="9.1" ry="5.9"/>
+                     </g>
+                  </svg>
+                  <a href="#" class="main-nav__login-link">Sign in</a>
+               </div>
+            </header>
+         </div>
+         <main>
+            <div class="form__container">
+               <h1 class="form__tittle">Russian Train Tickets</h1>
+               <form class="form" action="">
+                  <!-- откуда -->
+                  <div class="form__block-city">
+                     <div class="form__block-1">
+                        <label class="form__label" for="departure">Departure city:</label>
+                        <input class="form__input form__input--city" type="text" name="departure" value="" placeholder="Type city name">
+                        <span class="form__example">Ex: </span><a class="form__example-link" onclick="spb()" href="#">St. Petersburg,</a> <a class="form__example-link" href="#">Moscow</a>
+                     </div>
+                     <button class="form__reverse">
+                        <svg class="form__reverse-icon" version="1.1" id="Слой_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                           viewBox="0 0 30.8 17.2" style="enable-background:new 0 0 30.8 17.2;" xml:space="preserve">
+                           <path class="st0" d="M26,0.6c-0.4-0.4-1-0.5-1.4-0.1c-0.4,0.4-0.5,1-0.1,1.4l2.8,3.2H13.6c-0.6,0-1,0.4-1,1s0.4,1,1,1H27l-2.5,2.5
+                              c-0.4,0.4-0.4,1,0,1.4c0.2,0.2,0.4,0.3,0.7,0.3c0.3,0,0.5-0.1,0.7-0.3l4.8-4.9L26,0.6z"/>
+                           <path class="st0" d="M5.1,6.5c0.4-0.4,1-0.5,1.4-0.1c0.4,0.4,0.5,1,0.1,1.4L3.9,11h13.7c0.6,0,1,0.4,1,1s-0.4,1-1,1H4.1l2.5,2.5
+                              c0.4,0.4,0.4,1,0,1.4c-0.2,0.2-0.4,0.3-0.7,0.3c-0.3,0-0.5-0.1-0.7-0.3L0.3,12L5.1,6.5z"/>
+                        </svg>
+                     </button>
+                     <!-- куда -->
+                     <div class="form__block form__block-2">
+                        <label class="form__label" for="arrival">Arrival city:</label>
+                        <input class="form__input form__input--city" type="text" name="arrival" value=""  placeholder="Type city name">
+                        <span class="form__example">Ex: </span><a class="form__example-link form__example-spb" href="">St. Petersburg,</a> <a class="form__example-link" href="#">Moscow</a>
+                     </div>
+                  </div>
+                  <div class="form__block-last">
+                     <div class="form__block-data">
+                        <div class="form__block form__block-3">
+                           <label class="form__label" for="">Departure date:</label>
+                           <input class="form__input form__input--data" type="datetime" placeholder="dd.mm.yyyy">
+                        </div>
+                        <div class="form__block form__block-4">
+                           <div class="form__block-roundtrip">
+                              <input type="checkbox" name="roundtrip" id="roundtrip" onclick="roundtripForm(this.form)">
+                              <label for="roundtrip">Roundtrip</label>
+                           </div>
+                           <div>
+                              <label class="form__label" for="return">Return date:</label>
+                              <input class="form__input form__input--data" type="datetime" name="return" placeholder="dd.mm.yyyy" disabled>
+                           </div>
+                        </div>
+                        <div class="form__block form__block-5">
+                           <span class="form__label">Currency</span>
+                           <select class="form__input form__input--currency" name="" id="">
+                              <option class="form__currency" value="currency">rub</option>
+                              <option class="form__currency" value="currency">usd</option>
+                              <option class="form__currency" value="currency">gbr</option>
+                              <option class="form__currency" value="currency">eur</option>
+                              <option class="form__currency" value="currency">chf</option>
+                           </select>
+                        </div>
+                     </div>
+                     <button class="form__button">Search</button>
+                  </div>
+               </form>
+            </div>
+         </main>
+      </div>
+      <script>
+         function roundtripForm(f) {
+           if (f.roundtrip.checked) f.return.disabled = 1
+           else f.return.disabled = 0
+         }
+      </script>
+      <script>
+         var navMain = document.querySelector('.main-nav');
+         var navToggle = document.querySelector('.main-nav__toggle');
+
+         navMain.classList.remove('main-nav--nojs');
+
+         navToggle.addEventListener('click', function() {
+           if (navMain.classList.contains('main-nav--closed')) {
+             navMain.classList.remove('main-nav--closed');
+             navMain.classList.add('main-nav--opened');
+           } else {
+             navMain.classList.add('main-nav--closed');
+             navMain.classList.remove('main-nav--opened');
+           }
+         });
+      </script>
+   </body>
+</html>
